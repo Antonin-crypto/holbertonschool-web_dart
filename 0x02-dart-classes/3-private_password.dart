@@ -5,7 +5,13 @@ class Password {
     _password = password;
   }
 
+  // Getter
+  String get password => _password;
 
+  // Setter
+  set password(String value) {
+    _password = value;
+  }
 
   bool isValid() {
     final hasUppercase = _password.contains(RegExp(r'[A-Z]'));
@@ -18,6 +24,6 @@ class Password {
 
   @override
   String toString() {
-    return 'Your Password is $_password';
+    return 'Your Password is: $_password';
   }
 }
