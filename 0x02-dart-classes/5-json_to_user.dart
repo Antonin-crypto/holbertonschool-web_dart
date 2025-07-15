@@ -10,7 +10,6 @@ class User {
     return {'id': id, 'name': name, 'age': age, 'height': height};
   }
 
-
   static User fromJson(Map<dynamic, dynamic> userJson) {
     return User(
       id: userJson['id'],
@@ -22,6 +21,6 @@ class User {
 
   @override
   String toString() {
-    return 'User(id : $id,name: $name, age: $age, height: $height)';
+    return 'User(id : $id ,name: $name,  age: $age, height: $height)';
   }
 }
